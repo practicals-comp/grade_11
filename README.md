@@ -106,3 +106,54 @@ else:
        n2 = nth
        count += 1
 ```
+
+# Menu Driven Program
+
+## Print Factors & Check Even or Odd
+
+### Without Loop
+
+```python
+print("1 - Print Factor")
+print("2 - Check Even or Odd")
+choice = int(input("Enter your choice - "))
+if choice == 1:
+    n = int(input("Enter Number: "))
+    for i in range (1, n +1):
+        if n%i==0:
+            print(i)
+elif choice == 2:
+    n = int(input("Enter Number: "))
+    if n % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+else:
+    print("Invalid Choice")
+```
+
+### With Loop
+
+```python
+while True:
+    print("1 - Print Factor")
+    print("2 - Check Even or Odd")
+    print("0 - Exit")
+    choice = int(input("Enter your choice : "))
+    if choice == 0:
+        break
+    elif choice == 1:
+        n = int(input("Enter Number: "))
+        for i in range (1, n +1):
+            if n % i==0:
+                print(i)
+    elif choice == 2:
+        n = int(input("Enter Number: "))
+        if n % 2 == 0:
+            print("Even")
+        else:
+            print("Odd")
+    else:
+        print("Invalid Choice")
+
+``
