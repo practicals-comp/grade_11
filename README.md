@@ -7,7 +7,7 @@ a = int(input("Enter First Side: "))
 b = int(input("Enter Second Side: "))
 c = int(input("Enter Third Side: "))
 
-if (a + b <= c) or (a + c <= b) or (b + c <= a) : 
+if (a + b > c) and (a + c > b) and (b + c > a) : 
     print("It is a valid triangle")
     if a==b and b==c:
         print("The triangle is equilateral")
@@ -16,7 +16,7 @@ if (a + b <= c) or (a + c <= b) or (b + c <= a) :
     else:
         print("The triangle is scalene")
 else: 
-    print("It is not a valid triangle")		
+    print("It is not a valid triangle")			
 ```
 
 # Looping
