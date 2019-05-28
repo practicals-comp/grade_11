@@ -1,3 +1,24 @@
+# Conditionals
+
+## Checking for Valid Triangle and Type Of Triangle
+
+```python
+a = int(input("Enter First Side: "))
+b = int(input("Enter Second Side: "))
+c = int(input("Enter Third Side: "))
+
+if (a + b <= c) or (a + c <= b) or (b + c <= a) : 
+    print("It is a valid triangle")
+    if a==b and b==c:
+        print("The triangle is equilateral")
+    elif a==b or b==c or a==c:
+        print("The triangle is isoceles")
+    else:
+        print("The triangle is scalene")
+else: 
+    print("It is not a valid triangle")		
+```
+
 # Looping
 
 ## Print Multiplication Table for a Number
